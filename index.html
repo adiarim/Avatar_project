@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatar | Pandora</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/core.css">
+    <link rel="icon" type="image/webp" sizes="64x64" href="./images/mainLogo.webp">
+    <link rel="shortcut icon" href="./images/mainLogo.webp">
+    <link rel="stylesheet" href="icomoon/style.css">
+</head>
+<body>
+    <div id="avatar-container">
+        <header class="header">
+            <div class="container inner_header">
+                <a href="index.html" class="logotype">
+                    <img src="./images/avatar_logo.png" alt="Avatar Logotype">
+                </a>
+                <ul class="menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="movies.html" class="active">Movies</a></li>
+                    <li><a href="characters.html" class="active">Characters</a></li>
+                    <li><a href="ride.html" class="active">Ride the Skies</a></li>
+                    <li><a href="about.html" class="active">About Pandora</a></li>
+                </ul>
+                <button class="modal_button" id="btn-get">
+                    <span class="btn-lines">Welcome Na'vi</span>
+                </button>
+            </div>
+        </header>
+        <section class="main_block" id="hero">
+            <div class="main_block_inner">
+                <div class="main_background">
+                    <div class="container">
+                        <div class="main_text">
+                            <h1><strong id="av-color">The World</strong> of Avatar</h1>
+                            <div class="colors_buttons">
+                                <button class="btn-color"></button>
+                                <button class="btn-color"></button>
+                                <button class="btn-color"></button>
+                                <button class="btn-color"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="history_block">
+            <div class="inner_history">
+                <h2>About the Avatar Universe</h2>
+                <div class="container">
+                    <div class="about_item">
+                        <h3>Pandora</h3>
+                        <p>Pandora is a distant moon rich in life and energy. Its ecosystem is deeply connected, and every living being plays a role in balance.</p>
+                    </div>
+                    <div class="about_item">
+                        <h3>The Story</h3>
+                        <p>The story follows the Na’vi people and their struggle to protect their world. It is a journey about identity, choice and connection.</p>
+                        <img src="https://lumiere-a.akamaihd.net/v1/images/avatar_quote_divider_c2ed0c85.svg" alt="Avatar Divider">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slider_block">
+            <h3 class="slider_title">Explore the lands, creatures, and stories of a living planet</h3>
+
+            <button class="btn_slide" id="prev"><</button>
+            <button class="btn_slide" id="next">></button>
+
+            <div class="slider">
+                <div class="slide active_slide">
+                    <div class="video_card">
+                        <div class="video_wrapper">
+                            <iframe src="https://www.youtube.com/embed/5PSNL1qE6VY" allowfullscreen></iframe>
+                        </div>
+                        <div class="video_text">Jake Sully enters Pandora through the Avatar Program and discovers the Na’vi way of life.
+                                What begins as a mission turns into a choice between loyalty and belonging.</div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="video_card">
+                        <div class="video_wrapper">
+                            <iframe src="https://www.youtube.com/embed/d9MyW72ELq0" allowfullscreen></iframe>
+                        </div>
+                        <div class="video_text">Jake and Neytiri build a family and are forced to leave their home to protect it.
+                            As they explore Pandora’s oceans, they learn new ways of living and fighting together.</div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="video_card">
+                        <div class="video_wrapper">
+                            <iframe src="https://www.youtube.com/embed/V9uJ3mcOFA0" allowfullscreen></iframe>
+                        </div>
+                        <div class="video_text">A new chapter reveals darker sides of Pandora and the Na’vi.
+                             The balance is challenged not only by humans, but from within the world itself.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="site-footer">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="./images/avatar_logo.png" alt="Avatar Logo">
+                </div>
+                <ul class="footer-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Characters</a></li>
+                    <li><a href="#">Ride the Skies</a></li>
+                    <li><a href="#">About Pandora</a></li>
+                </ul>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/adiarim1?igsh=OThkZng4d2t0NzB6" target="_blank"><span class="icon-instagram"></span></a>
+                    <a href="https://t.me/egizovam" target="_blank"><span class="icon-telegram"></span></a>
+                    <a href="mailto:egizovamm@gmail.com"><span class="icon-envelop"></span></a>
+                    <a href="https://www.facebook.com/share/1KskMvUgEB/?mibextid=wwXIfr" target="_blank"><span class="icon-facebook"></span></a>
+                </div>
+                <p class="footer-copy">&copy; 2026 Avatar Universe. Made with love for Pandora fans.</p>
+            </div>
+        </footer>
+
+    </div>
+    <div class="modal-overlay" id="modal">
+        <div class="modal">
+            <button class="modal-close" id="modal-close">×</button>
+        <div class="modal-logo">
+            <img src="./images/avatar_logo.png" alt="Avatar Logo">
+        </div>
+        <h2 class="modal-title">Welcome to Pandora</h2>
+        <p class="modal-text">
+            Join the Na’vi and begin your journey through the world of Avatar.
+        </p>
+        <form class="modal-form">
+            <input type="text" placeholder="Your name" required>
+            <input type="email" placeholder="Email address" required>
+
+      <button type="submit" class="modal-submit">
+        Enter Pandora
+      </button>
+       </form>
+    </div>
+</div>
+
+</body>
+<script src="./js/main.js"></script>
+</html>

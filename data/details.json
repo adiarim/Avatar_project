@@ -1,0 +1,94 @@
+{
+  "characters_info": [
+    {
+      "name": "Jake Sully",
+      "clan": "Omatikaya",
+      "description": "A former Marine who became the Toruk Makto and leader of the Omatikaya clan.",
+      "weapon": "M60 Machine Gun / Omatikaya Bow"
+    },
+    {
+      "name": "Neteyam",
+      "clan": "Omatikaya",
+      "description": "The eldest son of Jake and Neytiri, a golden boy and a skilled warrior.",
+      "weapon": "Omatikaya Longbow"
+    },
+    {
+      "name": "Neitiry",
+      "clan": "Omatikaya",
+      "description": "The fierce and noble Tsahìk-in-waiting of the Omatikaya clan and wife of Jake.",
+      "weapon": "Her father's bow (Omatikaya Longbow)"
+    },
+    {
+      "name": "Lo'ak",
+      "clan": "Omatikaya / Metkayina",
+      "description": "The impulsive second son of Jake Sully who feels like an outcast.",
+      "weapon": "Hunting Knife / Bow"
+    },
+    {
+      "name": "Kiri",
+      "clan": "Omatikaya",
+      "description": "The adopted daughter of Jake and Neytiri with a unique spiritual connection to Eywa.",
+      "weapon": "Nature and spiritual powers"
+    },
+    {
+      "name": "Miles Quaritch",
+      "clan": "RDA Recombinant",
+      "description": "A Recombinant soldier with the memories of the deceased Colonel Quaritch.",
+      "weapon": "Assault Rifle / Combat Knife"
+    },
+    {
+      "name": "Spider",
+      "clan": "Human (Na'vi raised)",
+      "description": "A human child born on Pandora who prefers the culture of the Na'vi.",
+      "weapon": "Small Bow / Survival Tools"
+    },
+    {
+      "name": "Tonowari",
+      "clan": "Metkayina",
+      "description": "The Olo'eyktan (leader) of the Metkayina reef clan.",
+      "weapon": "Metkayina Harpoon Spear"
+    },
+    {
+      "name": "Ronal",
+      "clan": "Metkayina",
+      "description": "The Tsahìk of the Metkayina clan, a powerful and fierce healer.",
+      "weapon": "Ceremonial Dagger / Spear"
+    },
+    {
+      "name": "Tsireya",
+      "clan": "Metkayina",
+      "description": "The daughter of Tonowari, a gentle and graceful free-diver.",
+      "weapon": "None (Healer / Teacher)"
+    },
+    {
+      "name": "Varang",
+      "clan": "Mangwan",
+      "description": "The leader of a volatile and aggressive clan of fire-dwelling Na'vi.",
+      "weapon": "Obsidian Blade / Fire Tools"
+    },
+    {
+      "name": "Dr. Grace Augustine",
+      "clan": "Human (Avatar Program)",
+      "description": "The legendary xenobotanist who ran the Avatar program to bridge two worlds.",
+      "weapon": "Knowledge and Science"
+    },
+    {
+      "name": "Tsu'tey",
+      "clan": "Omatikaya",
+      "description": "Once the clan's finest warrior and the original betrothed of Neytiri.",
+      "weapon": "Omatikaya Bow / Direhorse"
+    },
+    {
+      "name": "Ao'nung",
+      "clan": "Metkayina",
+      "description": "The son of Tonowari, a skilled hunter who initially clashed with the Sully family.",
+      "weapon": "Hunting Spear"
+    },
+    {
+      "name": "Norman",
+      "clan": "Human (Avatar Program)",
+      "description": "A scientist and friend of Jake who operates an Avatar to study Pandora.",
+      "weapon": "Avatar Tech / Scientific Gear"
+    }
+  ]
+}

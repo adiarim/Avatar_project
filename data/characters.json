@@ -1,0 +1,62 @@
+[
+{
+  "name": "Jake Sully",
+  "photo": "../images/character/JakeSully_photo.jpg"
+},
+{
+  "name": "Neteyam",
+  "photo": "../images/character/neteyamPhoto.jpg"
+},
+{
+  "name": "Neitiry",
+  "photo": "../images/character/NeitiryPhoto.jpg"
+},
+{
+  "name": "Lo'ak",
+  "photo": "../images/character/loakPhoto1.jpg"
+},
+{
+  "name": "Kiri",
+  "photo": "../images/character/kiriPhoto.jpg"
+},
+{
+  "name": "Miles Quaritch",
+  "photo": "https://i.pinimg.com/736x/83/39/7c/83397c501e1a3f8670fd1050fde482e5.jpg"
+},
+{
+  "name": "Spider",
+  "photo": "../images/character/spiderAvatar.jpg"
+},
+{
+  "name": "Tonowari",
+  "photo": "../images/character/tonowariPhoto.jpg"
+},
+{
+  "name": "Ronal",
+  "photo": "../images/character/RonalAvatar.jpg"
+},
+{
+  "name": "Tsireya",
+  "photo": "../images/character/TsireyaPhoto.jpg"
+},
+{
+  "name": "Varang",
+  "photo": "../images/character/varangPhoto.jpg"
+},
+{
+  "name": "Dr. Grace Augustine",
+  "photo": "../images/character/gracePhoto.jpg"
+},
+{
+  "name": "Tsu'tey",
+  "photo": "../images/character/tsuteiPhoto.jpg"
+},
+{
+  "name": "Ao'nung",
+  "photo": "https://i.pinimg.com/736x/29/6b/fd/296bfd532a2a33a3df4d8c4e73dae315.jpg"
+},
+{
+  "name": "Norman",
+  "photo": "../images/character/NormanPhoto.jpg"
+}
+]

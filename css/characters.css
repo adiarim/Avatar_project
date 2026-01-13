@@ -1,0 +1,167 @@
+:root {
+  --black: #020a1a;
+  --dark-blue: #081b33;
+  --blue: #00cfff;
+  --light-blue: #1fffd5;
+  --white: #eaf6ff;
+  --gray: #9fb6d1;
+  --yellow: #f5c77a;
+}
+
+.characters {
+  padding: 100px 0;
+  position: relative;
+  backdrop-filter: blur(10px); 
+}
+
+.characters::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(2,10,26,0.3); 
+  z-index: -1;
+}
+
+.characters-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px; 
+  font-size: 3rem;
+  color: var(--dark-blue);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 40px 0;
+  text-align: center;
+}
+
+.characters-title::before,
+.characters-title::after {
+  content: "";
+    display: block;
+    width: 150px; 
+    height: 40px; 
+    background: url('https://lumiere-a.akamaihd.net/v1/images/avatar_quote_divider_c2ed0c85.svg') no-repeat center;
+    background-size: contain;
+}
+
+.characters-title::after {
+  transform: scaleX(-1);
+}
+
+.characters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+.character-card {
+  background: var(--dark-blue);
+  border: 2px solid rgba(13, 45, 76, 0.4);
+  border-radius: 18px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform; 
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,255,255,0.3), 0 10px 20px rgba(0,0,0,0.4);
+  cursor: pointer;
+}
+
+.character-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(0,255,255,0.4);
+}
+
+.character-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.character-card h3 {
+  color: #00f2ff;
+  font-size: 1.2rem;
+  margin: 10px 0;
+  letter-spacing: 1px;
+}
+
+.characters-detail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85); 
+    backdrop-filter: blur(8px);
+    display: none; 
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.characters-detail.active {
+    display: flex;
+}
+
+.character-container {
+    background: #0a1f35; 
+    padding: 40px;
+    border-radius: 30px;
+    position: relative;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    border: 1px solid rgba(0, 242, 255, 0.3);
+    box-shadow: 0 0 50px rgba(0, 242, 255, 0.2);
+}
+
+.closeChar {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 35px;
+    color: #00f2ff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.char-poster {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.char-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.char-clan {
+  margin-top: 8px;
+  font-size: 20px;
+  color: var(--white);
+}
+
+.char-weapon {
+  margin-top: 8px;
+  font-size: 20px;
+  color: var(--white);
+}
+
+.char-desc {
+  margin-top: 8px;
+  font-size: 20px;
+  color: var(--gray);
+}
+

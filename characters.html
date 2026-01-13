@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatar | Pandora</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/core.css">
+    <link rel="stylesheet" href="./css/characters.css">
+    <link rel="icon" type="image/png" sizes="64x64" href="./images/mainLogo.webp">
+    <link rel="shortcut icon" href="./images/mainLogo.webp">
+    <link rel="stylesheet" href="icomoon/style.css">
+</head>
+<body>
+    <div id="avatar-container">
+        <header class="header">
+            <div class="container inner_header">
+                <a href="index.html" class="logotype">
+                    <img src="./images/avatar_logo.png" alt="Avatar Logotype">
+                </a>
+                <ul class="menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="movies.html" class="active">Movies</a></li>
+                    <li><a href="characters.html" class="active">Characters</a></li>
+                    <li><a href="ride.html" class="active">Ride the Skies</a></li>
+                    <li><a href="about.html" class="active">About Pandora</a></li>
+                </ul>
+                <button class="modal_button" id="btn-get">
+                    <span class="btn-lines">Welcome Na'vi</span>
+                </button>
+            </div>
+        </header>
+        <section class="movies-hero">
+            <div class="container">
+                <h1>Avatar Movies</h1>
+                <p>Explore the cinematic journey of Pandora</p>
+            </div>
+        </section>
+        <section class="characters">
+            <div class="container">
+                <h2 class="characters-title">Featured Characters</h2>
+                <div class="characters-grid">
+
+                </div> 
+            </div> 
+        </section>
+        <footer class="site-footer">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="./images/avatar_logo.png" alt="Avatar Logo">
+                </div>
+                <ul class="footer-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Characters</a></li>
+                    <li><a href="#">Ride the Skies</a></li>
+                    <li><a href="#">About Pandora</a></li>
+                </ul>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/adiarim1?igsh=OThkZng4d2t0NzB6" target="_blank"><span class="icon-instagram"></span></a>
+                    <a href="https://t.me/egizovam" target="_blank"><span class="icon-telegram"></span></a>
+                    <a href="mailto:egizovamm@gmail.com"><span class="icon-envelop"></span></a>
+                    <a href="https://www.facebook.com/share/1KskMvUgEB/?mibextid=wwXIfr" target="_blank"><span class="icon-facebook"></span></a>
+                </div>
+                <p class="footer-copy">&copy;
+                    2026 Avatar Universe. Made with love for Pandora fans.
+                </p>
+            </div>
+        </footer>
+        <div class="characters-detail">
+        <div class="character-container">
+            <button class="closeChar">×</button>
+            <div class="charTop">
+                <img class="char-poster" src="" alt="">
+            </div>
+            <p class="char-name"></p>
+            <p class="char-clan"></p>
+            <p class="char-weapon"></p>
+            <p class="char-desc"></p>
+        </div>
+    </div>
+    </div>  
+    <div class="modal-overlay" id="modal">
+        <div class="modal">
+            <button class="modal-close" id="modal-close">×</button>
+        <div class="modal-logo">
+            <img src="./images/avatar_logo.png" alt="Avatar Logo">
+        </div>
+        <h2 class="modal-title">Welcome to Pandora</h2>
+        <p class="modal-text">
+            Join the Na’vi and begin your journey through the world of Avatar.
+        </p>
+        <form class="modal-form">
+            <input type="text" placeholder="Your name" required>
+            <input type="email" placeholder="Email address" required>
+
+      <button type="submit" class="modal-submit">
+        Enter Pandora
+      </button>
+       </form>
+    </div>  
+    
+</body>
+<script src="./js/main.js"></script>
+<script src="./js/characters.js"></script>
+</html>        
