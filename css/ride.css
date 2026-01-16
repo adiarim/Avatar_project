@@ -14,7 +14,7 @@
     color: #fff;
     overflow: hidden;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                url('/images/bgImg/bgs-imgVarang.webp') no-repeat center center/cover;
+                url('/images/bgImg/VarangBgs.webp') no-repeat center center/cover;
     background-attachment: fixed;
 }
 
