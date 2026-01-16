@@ -29,17 +29,6 @@ window.onkeydown = (event) => {
     } 
 }
 
-btnColor.forEach((btn) => {
-    btn.addEventListener('click', (event) => {
-        const original = btn.style.backgroundColor;
-        btn.style.backgroundColor = '#ba15d3';
-
-        setTimeout(() => {
-            btn.style.backgroundColor = original;   
-        }, 500); 
-    });
-});
-
 
 
 const modalOverlay = document.querySelector('#modal');

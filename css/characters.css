@@ -18,7 +18,9 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(2,10,26,0.3); 
+  background: 
+  linear-gradient(rgba(16, 29, 51, 0.85), rgba(192, 192, 192, 0.85)), 
+  url("/images/bgImg/bgs-img1.jpg");
   z-index: -1;
 }
 
@@ -28,7 +30,7 @@
   justify-content: center;
   gap: 30px; 
   font-size: 3rem;
-  color: var(--dark-blue);
+  color: var(--yellow);
   text-transform: uppercase;
   letter-spacing: 5px;
   margin: 40px 0;

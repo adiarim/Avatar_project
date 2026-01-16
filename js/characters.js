@@ -64,7 +64,7 @@ characterModal.addEventListener('click', (e) => {
   }
 }); 
 
-// Основной запрос для отрисовки сетки
+
 const requester = new XMLHttpRequest();
 requester.open('GET', '../data/characters.json');
 requester.send();

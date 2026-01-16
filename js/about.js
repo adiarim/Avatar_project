@@ -12,7 +12,7 @@ const converter = (element) => {
         requester.onload = () => {
             const data = JSON.parse(requester.response);
             
-            // Вычисляем кросс-курс на основе данных из JSON
+
             const yuanToSom = data.usd / data.yuan;
 
             if (element.value === '') {
@@ -22,7 +22,7 @@ const converter = (element) => {
                 return;
             }
 
-            // Логика конвертации
+
             if (element.id === 'som') {
                 usdInput.value = (element.value / data.usd).toFixed(2);
                 yuanInput.value = (element.value / yuanToSom).toFixed(2);
@@ -40,3 +40,38 @@ const converter = (element) => {
 converter(somInput);
 converter(usdInput);
 converter(yuanInput);
+
+const audio = document.querySelector('#pandora-audio');
+const audioBtn = document.querySelector('#audio-control-btn');
+
+audioBtn.addEventListener('click', () => {
+    if (audio.paused) {
+        audio.play();
+        audio.volume = 0.4; 
+        audioBtn.innerHTML = "⏸ Stop Ambience";
+        audioBtn.classList.add('playing');
+    } else {
+        audio.pause();
+        audioBtn.innerHTML = "🍃 Listen to Pandora";
+        audioBtn.classList.remove('playing');
+    }
+});
+
+const magicSpotlight = document.createElement('div');
+magicSpotlight.style.cssText = `
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(0, 242, 255, 0.07) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s;
+`;
+document.body.appendChild(magicSpotlight);
+
+window.addEventListener('mousemove', (e) => {
+    magicSpotlight.style.left = e.clientX + 'px';
+    magicSpotlight.style.top = e.clientY + 'px';
+});

@@ -140,6 +140,11 @@ ul {
     border: 1px solid #ba15d3;
     cursor: pointer;
     transition: 1.2s;
+}
+.btn-color:hover {
+    background: #ba15d3;
+    color: var(--yellow);
+    transform: translateY(-3px);
 }   
 
 .history_block {
@@ -198,7 +203,9 @@ ul {
 }
 
 .slider_block {
-  background-image: url('https://lumiere-a.akamaihd.net/v1/images/background_sunset_desktop_becce738.jpeg?region=0,0,1440,673');
+  background: 
+  linear-gradient(rgba(5, 15, 26, 0.85), rgba(6, 19, 33, 0.85)), 
+  url(https://image.tmdb.org/t/p/original/x3lDB2jEHnWciBz0W1tARG3gJs6.jpg);
   height: 800px;
   padding: 100px 0;
   display: flex;
@@ -280,10 +287,9 @@ ul {
 
 .video_card {
   width: 100%;
-  background: #dcecff;
+  background: var(--white);
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 18px 50px rgba(255, 251, 251, 0.6);
 }
 
 .video_wrapper {

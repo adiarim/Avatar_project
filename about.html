@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="icomoon/style.css">
 </head>
 <body>
+    <div id="atokirina-container"></div>
     <div id="avatar-container">
         <header class="header">
             <div class="container inner_header">
@@ -33,9 +34,17 @@
         <section class="pandora-hero">
             <div class="pandora-background"></div>
             <div class="hero-overlay"></div> 
-            
+
             <div class="container pandora-content">
-                <div class="hero-badge">Exploration Guide</div>
+                <div class="audio-container">
+                <audio id="pandora-audio" loop>
+                    <source src="./assets/Soundpandora.mp3" type="audio/mpeg">
+                </audio>
+                
+                <button id="audio-control-btn" class="audio-btn">
+                    <span class="icon">🍃</span> Listen to Pandora
+                </button>
+            </div>
                 <h1 class="main-glow-title">Inside the World <br> <span>of Pandora</span></h1>
                 <p class="hero-subtitle">Discover the majestic clans, floating mountains, and the sacred connection with Eywa.</p>
                 <div class="scroll-indicator">
@@ -107,7 +116,7 @@
         </section>
         <section class="wildlife-expanded">
             <div class="container">
-                <h2 class="section-title">Wildlife & Spirit</h2>
+                <h2 class="title-fauna">Wildlife & Spirit</h2>
 
                 <h3 class="category-name">Sacred Flora</h3>
                 <div class="wildlife-grid">
