@@ -44,13 +44,13 @@ const converter = (element) => {
 
     element.oninput = () => {
         const requester = new XMLHttpRequest();
-        requester.open('GET', '../data/converter.json');
+        requester.open('GET', './data/converter.json');
         requester.setRequestHeader('Content-Type', 'application/json');
         requester.send();
 
         requester.onload = () => {
             const data = JSON.parse(requester.response);
-            
+
             localStorage.setItem('lastConvertedValue', element.value);
             localStorage.setItem('lastConvertedId', element.id);
 
