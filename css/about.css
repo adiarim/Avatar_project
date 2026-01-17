@@ -384,6 +384,75 @@
     color: #fdbb2d;
 }
 
+.about_weather_box {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 25px;
+    border: 1px solid rgba(0, 242, 255, 0.2);
+    margin-bottom: 30px;
+    font-family: 'Courier New', monospace;
+}
+
+.about_weather_box h5 {
+    color: var(--yellow);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.about_weather_box .search-container {
+    display: flex;
+    border-bottom: 1px solid rgba(0, 207, 255, 0.4);
+    margin-bottom: 15px;
+}
+
+.about_weather_box .cityName {
+    background: transparent;
+    border: none;
+    color: #fff;
+    padding: 8px 5px;
+    width: 100%;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+.btnSearch {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--yellow); 
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    transition: 0.3s;
+}
+
+.btnSearch:hover {
+    text-shadow: 0 0 10px var(--yellow);
+    transform: scale(1.05);
+}
+
+.about_weather_box .weather-res {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.about_weather_box .city {
+    font-size: 0.85rem;
+    color: var(--gray); 
+}
+
+.about_weather_box .temp {
+    font-size: 2.5rem;
+    color: var(--white);
+    font-weight: bold;
+    text-shadow: 0 0 15px rgba(0, 207, 255, 0.4);
+}
+
 .china-inspiration {
     background: rgba(0, 0, 0, 0.3);
     padding: 25px;

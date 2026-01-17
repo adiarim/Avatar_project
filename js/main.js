@@ -30,7 +30,6 @@ window.onkeydown = (event) => {
 }
 
 
-
 const modalOverlay = document.querySelector('#modal');
 const openBtn = document.querySelector('#btn-get');
 const closeBtn = document.querySelector('.modal-close');
@@ -67,6 +66,46 @@ function showModalScroll() {
 window.addEventListener('scroll', showModalScroll);
 
 const modalTime = setTimeout(showModalScroll, 10000);
+
+const modalForm = document.querySelector('.modal-form');
+const naviBtnText = document.querySelector('#btn-get .btn-lines');
+
+function closeModal() {
+  modalOverlay.classList.remove('active');
+  document.body.style.overflow = '';
+  clearTimeout(modalTime);
+}
+
+closeBtn.addEventListener('click', closeModal);
+
+modalOverlay.addEventListener('click', (e) => {
+  if (e.target === modalOverlay) {
+    closeModal();
+  }
+});
+
+
+window.addEventListener('DOMContentLoaded', () => {
+    const savedName = localStorage.getItem('naviName');
+    if (savedName) {
+        naviBtnText.innerText = `Welcome, ${savedName}`;
+    }
+});
+
+modalForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const nameInput = modalForm.querySelector('input[type="text"]');
+    const userName = nameInput.value.trim();
+    
+    if (userName) {
+        localStorage.setItem('naviName', userName); 
+        naviBtnText.innerText = `Welcome, ${userName}`;
+        
+        closeModal(); 
+        
+        nameInput.value = '';
+    }
+});
 
 
 const slides = document.querySelectorAll('.slide');

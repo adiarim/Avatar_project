@@ -1,3 +1,40 @@
+const cityInput = document.querySelector(".cityName");
+const btnSearch = document.querySelector("#search");
+const cityNameDisplay = document.querySelector(".city"); 
+const tempText = document.querySelector(".temp");
+
+const KEY = '83b3ebd39b878f8be8acd104821aa61a';
+const BASE_API = 'https://api.openweathermap.org/data/2.5/weather';
+
+if (btnSearch && cityInput) {
+    btnSearch.addEventListener('click', () => {
+        const city = cityInput.value.trim();
+
+        if (city === '') {
+            if(cityNameDisplay) cityNameDisplay.innerHTML = 'Enter a city';
+            return;
+        }
+
+        fetch(`${BASE_API}?q=${city}&units=metric&lang=ru&appid=${KEY}`)
+            .then(response => {
+                if (!response.ok) throw new Error('City not found');
+                return response.json();
+            })
+            .then(data => {
+                const { name, main: { temp } } = data;
+                if(cityNameDisplay) cityNameDisplay.innerHTML = name;
+                if(tempText) tempText.innerHTML = `${Math.round(temp)}°C`;
+            })
+            .catch(err => {
+                if(cityNameDisplay) cityNameDisplay.innerHTML = 'Not found';
+                if(tempText) tempText.innerHTML = '';
+            });
+
+        cityInput.value = '';
+    });
+}
+
+
 const somInput = document.querySelector("#som");
 const yuanInput = document.querySelector("#yuan");
 const usdInput = document.querySelector("#usd");
