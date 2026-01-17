@@ -40,6 +40,8 @@ const yuanInput = document.querySelector("#yuan");
 const usdInput = document.querySelector("#usd");
 
 const converter = (element) => {
+    if (!element) return; 
+
     element.oninput = () => {
         const requester = new XMLHttpRequest();
         requester.open('GET', '../data/converter.json');
@@ -48,9 +50,9 @@ const converter = (element) => {
 
         requester.onload = () => {
             const data = JSON.parse(requester.response);
-            
-
-            const yuanToSom = data.usd / data.yuan;
+            п
+            localStorage.setItem('lastConvertedValue', element.value);
+            localStorage.setItem('lastConvertedId', element.id);
 
             if (element.value === '') {
                 somInput.value = '';
@@ -59,16 +61,17 @@ const converter = (element) => {
                 return;
             }
 
+            const val = parseFloat(element.value);
 
             if (element.id === 'som') {
-                usdInput.value = (element.value / data.usd).toFixed(2);
-                yuanInput.value = (element.value / yuanToSom).toFixed(2);
+                usdInput.value = (val / data.usd).toFixed(2);
+                yuanInput.value = (val / (data.usd / data.yuan)).toFixed(2);
             } else if (element.id === 'yuan') {
-                somInput.value = (element.value * yuanToSom).toFixed(2);
-                usdInput.value = (element.value / data.yuan).toFixed(2);
+                somInput.value = (val * (data.usd / data.yuan)).toFixed(2);
+                usdInput.value = (val / data.yuan).toFixed(2);
             } else if (element.id === 'usd') {
-                somInput.value = (element.value * data.usd).toFixed(2);
-                yuanInput.value = (element.value * data.yuan).toFixed(2);
+                somInput.value = (val * data.usd).toFixed(2);
+                yuanInput.value = (val * data.yuan).toFixed(2);
             }
         };
     };
@@ -77,6 +80,18 @@ const converter = (element) => {
 converter(somInput);
 converter(usdInput);
 converter(yuanInput);
+
+window.addEventListener('load', () => {
+    const lastVal = localStorage.getItem('lastConvertedValue');
+    const lastId = localStorage.getItem('lastConvertedId');
+    if (lastVal && lastId) {
+        const targetInput = document.getElementById(lastId);
+        if (targetInput) {
+            targetInput.value = lastVal;
+            targetInput.dispatchEvent(new Event('input')); 
+        }
+    }
+});
 
 const audio = document.querySelector('#pandora-audio');
 const audioBtn = document.querySelector('#audio-control-btn');
