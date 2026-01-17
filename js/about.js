@@ -50,7 +50,7 @@ const converter = (element) => {
 
         requester.onload = () => {
             const data = JSON.parse(requester.response);
-            п
+            
             localStorage.setItem('lastConvertedValue', element.value);
             localStorage.setItem('lastConvertedId', element.id);
 
