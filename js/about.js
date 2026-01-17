@@ -44,7 +44,7 @@ const converter = (element) => {
 
     element.oninput = () => {
         const requester = new XMLHttpRequest();
-        requester.open('GET', './data/converter.json');
+        requester.open('GET', 'data/converter.json');
         requester.setRequestHeader('Content-Type', 'application/json');
         requester.send();
 
