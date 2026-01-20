@@ -34,7 +34,7 @@ const characters = [
     name: "Spider",
     image: "./images/character/spiderAvatar.jpg",
     options: ["Tsu'tey", "Spider", "Lo'ak", "Lile Wainfleet"]
-  },
+  }
 ];
 
 let currentCharacterIndex = 0;
