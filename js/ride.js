@@ -24,7 +24,17 @@ const characters = [
     name: "Tonowari",
     image: "./images/character/tonowaryPhoto.jpg",
     options: ["Ronal", "Tonowari", "Ao'nung", "Eytukan"]
-  }
+  },
+  {
+    name: "Varang",
+    image: "./images/character/varangPhoto.jpg",
+    options: ["Varang", "Neytiri", "Kiri", "Ronal"]
+  },
+  {
+    name: "Spider",
+    image: "./images/character/spiderAvatar.jpg",
+    options: ["Tsu'tey", "Spider", "Lo'ak", "Lile Wainfleet"]
+  },
 ];
 
 let currentCharacterIndex = 0;
