@@ -55,6 +55,7 @@
     margin-top: 28px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
 }
 
@@ -168,4 +169,20 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 5px;
+}
+
+.option.ok {
+    background-color: #2ecc71 !important;
+    border-color: #27ae60;
+    color: white;
+}
+
+.option.error {
+    background-color: #e74c3c !important;
+    border-color: #c0392b;
+    color: white;
+}
+
+.option:disabled {
+    cursor: not-allowed;
 }

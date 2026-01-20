@@ -89,6 +89,35 @@
       "clan": "Human (Avatar Program)",
       "description": "A scientist and friend of Jake who operates an Avatar to study Pandora.",
       "weapon": "Avatar Tech / Scientific Gear"
+    },
+    { "name": "Rotxo",
+      "clan": "Metkayina",
+      "description": "The son of Tonowari, a skilled hunter who initially clashed with the Sully family.",
+      "weapon": "Hunting Spear"
+    },
+    {
+      "name": "Lile Wainfleet",
+      "clan": "RDA Recombinant",
+      "description": "A Recombinant soldier with the memories of the deceased Colonel Quaritch.",
+      "weapon": "Assault Rifle / Combat Knife"
+    },
+    {
+      "name": "Tarsem",
+      "clan": "Omatikaya",
+      "description": "The Olo'eyktan (leader) of the Omaticaya clan.",
+      "weapon": "Omatikaya Bow / Direhorse"
+    },
+    {
+      "name": "Mo'at",
+      "clan": "Omatikaya",
+      "description": "The Tsahìk (Spiritual Leader) of the Omaticaya clan and mother of Neytiri. She acts as the interpreter of Eywa's will and maintains the spiritual balance of her people.",
+      "weapon": "Spiritual wisdom and ceremonial Na'vi dagger"
+    },
+    {
+      "name": "Peylak",
+      "clan": "Tlalim (Merchant Clan)",
+      "description": "The leader of a nomadic merchant clan that travels across Pandora. They navigate the skies using giant jellyfish-like creatures, trading rare resources between different Na'vi tribes.",
+      "weapon": "Trade staff and paralyzing bolas inspired by air-jelly stingers"
     }
   ]
 }

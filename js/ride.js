@@ -77,29 +77,25 @@ function checkGuess(guess) {
     const optionsDiv = document.getElementById('options');
     const optionButtons = optionsDiv.querySelectorAll('.option');
 
-    optionButtons.forEach(button => button.disabled = true);
+    const clickedButton = Array.from(optionButtons).find(btn => btn.textContent === guess);
 
     if (guess === character.name) {
-        optionButtons.forEach(button => {
-            if (button.textContent === guess) button.classList.add('ok');
-            else button.classList.add('disabled');
-        });
         correctGuess = true;
+        
+        optionButtons.forEach(button => button.disabled = true);
+        
+        clickedButton.classList.add('ok');
+
         setTimeout(() => {
             nextCharacter();
             correctGuess = false;
         }, 1000);
     } else {
-        optionButtons.forEach(button => {
-            if (button.textContent === guess) button.classList.add('error');
-            else button.classList.add('disabled');
-        });
-        setTimeout(() => {
-            optionButtons.forEach(button => {
-                button.classList.remove('error', 'disabled');
-                button.disabled = false;
-            });
-        }, 1000);
+        clickedButton.classList.add('error');
+        
+        clickedButton.disabled = true;
+        clickedButton.style.opacity = "0.6";
+        clickedButton.style.cursor = "not-allowed";
     }
 }
 
@@ -184,5 +180,3 @@ if (stopBtn) stopBtn.addEventListener('click', stopStopwatch);
 if (resetBtn) resetBtn.addEventListener('click', resetStopwatch);
 
 window.onload = startGame;
-  
-

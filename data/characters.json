@@ -1,62 +1,102 @@
 [
 {
   "name": "Jake Sully",
+  "clan": "Omaticaya",
   "photo": "../images/character/JakeSully_photo.jpg"
 },
 {
   "name": "Neteyam",
+  "clan": "Omaticaya",
   "photo": "../images/character/neteyamPhoto.jpg"
 },
 {
   "name": "Neitiry",
+  "clan": "Omaticaya",
   "photo": "../images/character/NeitiryPhoto.jpg"
 },
 {
   "name": "Lo'ak",
+  "clan": "Omaticaya",
   "photo": "../images/character/loakPhoto1.jpg"
 },
 {
   "name": "Kiri",
+  "clan": "Omaticaya",
   "photo": "../images/character/kiriPhoto.jpg"
 },
 {
   "name": "Miles Quaritch",
+  "clan": "RDA Recombinant",
   "photo": "https://i.pinimg.com/736x/83/39/7c/83397c501e1a3f8670fd1050fde482e5.jpg"
 },
 {
   "name": "Spider",
+  "clan": "Human (Na'vi raised)",
   "photo": "../images/character/spiderAvatar.jpg"
 },
 {
   "name": "Tonowari",
+  "clan": "Metkayina",
   "photo": "../images/character/tonowariPhoto.jpg"
 },
 {
   "name": "Ronal",
+  "clan": "Metkayina",
   "photo": "../images/character/RonalAvatar.jpg"
 },
 {
   "name": "Tsireya",
+  "clan": "Metkayina",
   "photo": "../images/character/TsireyaPhoto.jpg"
 },
 {
   "name": "Varang",
+  "clan": "Mangwan",
   "photo": "../images/character/varangPhoto.jpg"
 },
 {
   "name": "Dr. Grace Augustine",
+  "clan": "Human (Avatar Program)",
   "photo": "../images/character/gracePhoto.jpg"
 },
 {
   "name": "Tsu'tey",
+  "clan": "Omaticaya",
   "photo": "../images/character/tsuteiPhoto.jpg"
 },
 {
   "name": "Ao'nung",
+  "clan": "Metkayina",
   "photo": "https://i.pinimg.com/736x/29/6b/fd/296bfd532a2a33a3df4d8c4e73dae315.jpg"
 },
 {
   "name": "Norman",
+  "clan": "Human (Avatar Program)",
   "photo": "../images/character/NormanPhoto.jpg"
+},
+{
+  "name": "Rotxo",
+  "clan": "Metkayina",
+  "photo": "https://i.pinimg.com/1200x/14/95/47/149547da3e9d36c948659ae2d9c79a4d.jpg"
+},
+{
+  "name": "Lile Wainfleet",
+  "clan": "RDA Recombinant",
+  "photo": "https://i.pinimg.com/1200x/2b/40/21/2b402142d2019946be63a0055484a76e.jpg"
+},
+{
+  "name": "Tarsem",
+  "clan": "Omaticaya",
+  "photo": "https://i.pinimg.com/736x/ba/84/6f/ba846f3361e90bd6aa564c72659000c7.jpg"
+},
+{
+  "name": "Mo'at",
+  "clan": "Omaticaya",
+  "photo": "https://i.pinimg.com/1200x/66/61/8a/66618a764f2392ccbb106d3b0be5dd48.jpg"
+},
+{
+  "name": "Peylak",
+  "clan": "Tlalim",
+  "photo": "https://i.pinimg.com/736x/58/75/c5/5875c57bce61b71ef447db21b305cebb.jpg"
 }
 ]

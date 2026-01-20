@@ -374,10 +374,21 @@ ul {
   transform: scale(1.2);
 }
 
+.footer-author {
+  text-decoration: none;
+  font-size: 15px;
+  color: #9fb6d1;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer-author a:hover {
+  color: var(--blue);
+}
+
 .footer-copy {
   font-size: 14px;
   color: #9fb6d1;
-  margin-top: 20px;
 }
 
 .modal-overlay {
