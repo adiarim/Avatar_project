@@ -57,7 +57,7 @@ const charecterModalOpen = async (character) => {
     characterName.innerText = character.name;
 
     try {
-        const response = await fetch('../data/details.json');
+        const response = await fetch('./data/details.json');
         const detailData = await response.json();
         const info = detailData.characters_info.find(item => item.name === character.name);
 
