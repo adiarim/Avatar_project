@@ -1,0 +1,525 @@
+:root {
+  --black: #020a1a;
+  --dark-blue: #081b33;
+  --blue: #00cfff;
+  --light-blue: #1fffd5;
+  --white: #eaf6ff;
+  --gray: #9fb6d1;
+  --yellow: #f5c77a;
+}
+
+.pandora-hero {
+    position: relative;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    color: #fff;
+}
+
+.pandora-background {
+    background-image: url("https://image.tmdb.org/t/p/original/ccp9KGTuImy1CRaIJXaTwt1P6uX.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: -2;
+    transform: scale(1.1); 
+    transition: transform 10s linear;
+}
+
+.pandora-hero:hover .pandora-background {
+    transform: scale(1); 
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(to bottom, 
+        rgba(0,0,0,0.3) 0%, 
+        rgba(5, 15, 26, 0.4) 60%, 
+        #050f1a 100%); 
+    z-index: -1;
+}
+
+.main-glow-title {
+    font-size: 5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 0.9;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.main-glow-title span {
+    color: #00f2ff; 
+    text-shadow: 0 0 20px rgba(0, 242, 255, 0.6), 0 0 40px rgba(0, 242, 255, 0.2);
+    font-size: 4rem;
+}
+
+.hero-badge {
+    background: rgba(0, 242, 255, 0.1);
+    border: 1px solid #00f2ff;
+    padding: 5px 20px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    color: #00f2ff;
+}
+
+.hero-subtitle {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.6;
+}
+
+.mouse {
+    width: 25px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto 10px;
+    position: relative;
+}
+
+.wheel {
+    width: 4px;
+    height: 8px;
+    background: #00f2ff;
+    border-radius: 2px;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: scroll-anim 2s infinite;
+}
+
+@keyframes scroll-anim {
+    0% { opacity: 1; transform: translate(-50%, 0); }
+    100% { opacity: 0; transform: translate(-50%, 15px); }
+}
+
+.pandora-clans-section,
+.wildlife-expanded {
+    background: linear-gradient(to bottom, #050f1a, #0a1f35); 
+    padding: 100px 0;
+    color: #fff;
+    position: relative;
+    background: linear-gradient(rgba(5, 15, 26, 0.85), rgba(5, 15, 26, 0.85)), 
+                url('https://img.goodfon.ru/original/1920x1080/6/d7/pandora-fantastika-oboi-film.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    color: white;
+}
+
+.audio-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.audio-btn {
+    background: rgba(0, 242, 255, 0.1);
+    border: 1px solid #00f2ff;
+    padding: 5px 20px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    color: #00f2ff;
+}
+
+.audio-btn:hover {
+    background: rgba(0, 242, 255, 0.3);
+    box-shadow: 0 0 25px rgba(0, 242, 255, 0.5);
+    transform: scale(1.05);
+}
+
+.audio-btn.playing {
+    background: #00f2ff;
+    color: #050f1a;
+}
+
+.section-title {
+    font-size: 3rem;
+    text-align: center;
+    color: #00f2ff;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    text-shadow: 0 0 15px rgba(0, 242, 255, 0.5);
+}
+
+.clan-name {
+    border-bottom: 2px solid rgba(0, 242, 255, 0.3);
+    display: inline-block;
+    padding-bottom: 10px;
+    margin: 40px 0 30px;
+    color: #fdbb2d;
+}
+
+.tribes-grid {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.tribe-card {
+    width: 350px;
+    background: rgba(255, 255, 255, 0.05); 
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    backdrop-filter: blur(10px);
+}
+
+.tribe-card:hover {
+    transform: translateY(-10px);
+    border-color: #00f2ff;
+    box-shadow: 0 15px 30px rgba(0, 242, 255, 0.2);
+}
+
+.tribe-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    filter: saturate(0.8);
+    transition: 0.4s;
+}
+
+.tribe-card:hover img {
+    filter: saturate(1.2);
+}
+
+.tribe-info {
+    padding: 25px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+}
+
+.tribe-info h4 {
+    font-size: 1.5rem;
+    color: var(--blue);
+    margin-bottom: 10px;
+}
+
+.tribe-info p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    opacity: 0.8;
+}
+
+.main-glow-title {
+    font-size: 5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #fff;
+}
+
+.btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(0, 242, 255, 0.05);
+    border: 2px solid #00f2ff;
+    color: #00f2ff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
+
+.slider-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px auto;
+}
+
+.wildlife-card-style {
+    width: 850px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border-radius: 30px;
+    padding: 30px;
+    border: 1px solid rgba(0, 242, 255, 0.3);
+    animation: eywa-pulse 4s infinite ease-in-out;
+}
+
+
+.wildlife-card-style .card-img-box {
+    flex: 0 0 280px;
+    height: 420px;  
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 242, 255, 0.2);
+}
+
+.wildlife-card-style .card-img-box img {
+    width: 780px;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.wildlife-card-style .card-info {
+    flex: 1;
+    margin-top: 20px;
+    text-align: center;
+    gap: 15px;
+}
+
+.mountains-hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; 
+    display: flex;
+    align-items: center; 
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.mountains-background {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
+    ), 
+    url("https://image.tmdb.org/t/p/original/58XeiOQHMe49uvKWEzqzGGkPzK3.jpg");
+    
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1; 
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.main-title {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #fdbb2d, #ff9d00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+.quaritch-quote {
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 5px solid #ff4d4d;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-style: italic;
+    backdrop-filter: blur(5px);
+    color: #eaf6ff;
+}
+
+.image-showcase {
+    position: relative;
+    margin: 30px 0;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.image-showcase img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    padding: 15px;
+    font-size: 0.9rem;
+    color: #fdbb2d;
+}
+
+.about_weather_box {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 25px;
+    border: 1px solid rgba(0, 242, 255, 0.2);
+    margin-bottom: 30px;
+    font-family: 'Courier New', monospace;
+}
+
+.about_weather_box h5 {
+    color: var(--yellow);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.about_weather_box .search-container {
+    display: flex;
+    border-bottom: 1px solid rgba(0, 207, 255, 0.4);
+    margin-bottom: 15px;
+}
+
+.about_weather_box .cityName {
+    background: transparent;
+    border: none;
+    color: #fff;
+    padding: 8px 5px;
+    width: 100%;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+.btnSearch {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--yellow); 
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    transition: 0.3s;
+}
+
+.btnSearch:hover {
+    text-shadow: 0 0 10px var(--yellow);
+    transform: scale(1.05);
+}
+
+.about_weather_box .weather-res {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.about_weather_box .city {
+    font-size: 0.85rem;
+    color: var(--gray); 
+}
+
+.about_weather_box .temp {
+    font-size: 2.5rem;
+    color: var(--white);
+    font-weight: bold;
+    text-shadow: 0 0 15px rgba(0, 207, 255, 0.4);
+}
+
+.china-inspiration {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 25px;
+    border-radius: 20px;
+    border-bottom: 3px solid #fdbb2d;
+    margin-bottom: 30px;
+}
+
+.inner-converter {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #fdbb2d;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.input-wrapper input {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+.input-wrapper input:focus {
+    border-color: #fdbb2d;
+}
+
+.description-text {
+    color: var(--white);
+}
+
+.image-caption {
+    color: var(--white);
+}
+
+.china-inspiration {
+    color: var(--white);
+}
+
+.inner-converter h5, p {
+    gap: 10px;
+    color: var(--white);
+}
+
+@keyframes eywa-pulse {
+    0% { box-shadow: 0 0 5px rgba(0, 242, 255, 0.2); }
+    50% { box-shadow: 0 0 20px rgba(138, 230, 235, 0.5); }
+    100% { box-shadow: 0 0 5px rgba(0, 242, 255, 0.2); }
+}
+
+.character-card, .btn, .clan-card, .character-container {
+    animation: eywa-pulse 4s infinite ease-in-out;
+    border: 1px solid rgba(0, 242, 255, 0.3) !important;
+    transition: all 0.5s ease;
+}
+
+
+

@@ -1,0 +1,188 @@
+:root {
+  --black: #020a1a;
+  --dark-blue: #081b33;
+  --blue: #00cfff;
+  --light-blue: #1fffd5;
+  --white: #eaf6ff;
+  --gray: #9fb6d1;
+  --yellow: #f5c77a;
+}
+
+.pandora-interactive-zone {
+    padding: 140px 0 100px; 
+    position: relative;
+    background: linear-gradient(rgba(16, 35, 44, 0.7), rgba(18, 34, 42, 0.7)), 
+                url('https://image.tmdb.org/t/p/original/rErtDcCMESt8R55kTeTVvOqnwqt.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.game-second {
+    width: 100%;
+    margin-top: auto; 
+}
+
+.timer h5 {
+    color: #00f2ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.info-card .icon {
+    font-size: 2rem;
+    filter: drop-shadow(0 0 10px #00f2ff);
+}
+
+.info-text h5 {
+    font-size: 0.9rem;
+    color: #00f2ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.interval {
+    font-size: 3rem; 
+    margin: 10px 0;
+    color: #00f2ff;
+}
+
+
+.timer-buttons {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.timer-buttons button {
+    font-family: "Montserrat";
+    width: 125px;
+    height: 58px;
+    border-radius: 60px;
+    border: 1px solid #00cfff;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFF;
+    border-radius: 60px;
+    background: #1B1B1B;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.btnn {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.startBtn {
+    width: 266.381px !important;
+    background: var(--blue) !important;
+}
+
+.main-glow-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 50px;
+    color: #fff;
+    text-shadow: 0 0 20px rgba(0, 242, 255, 0.8);
+}
+
+.game-card {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    padding: 40px;
+    width: 850px;
+    min-height: 600px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(25px);
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.game-top-content {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.game-img-box {
+    width: 100%;
+    max-width: 280px; 
+    margin: 0 auto 20px auto; 
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 242, 255, 0.3);
+    box-shadow: 0 0 15px rgba(0, 207, 255, 0.2);
+}
+
+.game-img-box img {
+    width: 100%;
+    height: 400px; 
+    object-fit: cover; 
+    display: block;
+}
+
+.games-flex-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 100px;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+}
+
+.option {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.option:hover {
+    background: var(--blue);
+    color: black;
+    transform: translateY(-3px);
+}
+
+#result {
+    margin-top: 20px;
+    color: var(--yellow);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.option.ok {
+    background-color: #2ecc71 !important;
+    border-color: #27ae60;
+    color: white;
+}
+
+.option.error {
+    background-color: #e74c3c !important;
+    border-color: #c0392b;
+    color: white;
+}
+
+.option:disabled {
+    cursor: not-allowed;
+}

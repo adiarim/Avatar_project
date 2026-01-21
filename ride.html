@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatar | Pandora</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/core.css">
+    <link rel="stylesheet" href="./css/ride.css">
+    <link rel="icon" type="image/png" sizes="64x64" href="./images/mainLogo.webp">
+    <link rel="shortcut icon" href="./images/mainLogo.webp">
+    <link rel="stylesheet" href="icomoon/style.css">
+</head>
+<body>
+    <div id="avatar-container">
+        <header class="header">
+            <div class="container inner_header">
+                <a href="index.html" class="logotype">
+                    <img src="./images/avatar_logo.png" alt="Avatar Logotype">
+                </a>
+                <ul class="menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="movies.html" class="active">Movies</a></li>
+                    <li><a href="characters.html" class="active">Characters</a></li>
+                    <li><a href="ride.html" class="active">Game</a></li>
+                    <li><a href="about.html" class="active">About Pandora</a></li>
+                </ul>
+                <button class="modal_button" id="btn-get">
+                    <span class="btn-lines">Welcome Na'vi</span>
+                </button>
+            </div>
+        </header>
+        <section class="pandora-interactive-zone">
+            <div class="container">
+                <h2 class="main-glow-title">Trials of the Warrior</h2>
+                
+                <div class="games-flex-container">
+                    <div class="game-card" id="quiz-card">
+                        <div class="game-top-content">
+                            <div class="game-img-box">
+                                <img src="./images/character/varangPhoto.jpg" alt="Clan Quiz">
+                            </div>
+                            <div id="time" class="timer">
+                                <h5>Mission Time</h5>
+                                <div class="interval" id="timer">00:00</div> 
+                                <div class="timer-buttons">
+                                    <button id="start" class="startBtn">Start</button>
+                                    <div class="btnn">
+                                        <button id="stop">Stop</button>
+                                        <button id="reset">Reset</button>
+                                    </div>
+                                </div>
+                                <p id="result"></p>
+                            </div>
+                        </div>
+
+                        <div class="game-second">
+                            <div class="options" id="options">
+                                <button class="option">Jake Sully</button>
+                                <button class="option">Kiri</button>
+                                <button class="option">Spider</button>
+                                <button class="option">Lo'ak</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <footer class="site-footer">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="./images/avatar_logo.png" alt="Avatar Logo">
+                </div>
+                <ul class="footer-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="characters.html">Characters</a></li>
+                    <li><a href="ride.html">Game</a></li>
+                    <li><a href="about.html">About Pandora</a></li>
+                </ul>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/adiarim1?igsh=OThkZng4d2t0NzB6" target="_blank"><span class="icon-instagram"></span></a>
+                    <a href="https://t.me/egizovam" target="_blank"><span class="icon-telegram"></span></a>
+                    <a href="mailto:egizovamm@gmail.com"><span class="icon-envelop"></span></a>
+                    <a href="https://www.facebook.com/share/1KskMvUgEB/?mibextid=wwXIfr" target="_blank"><span class="icon-facebook"></span></a>
+                </div>
+                <p class="footer-author">
+                    Designed and Developed by 
+                    <a href="https://github.com/adiarim" target="_blank">Miraida Daiyrbekova</a>
+                </p>
+                <p class="footer-copy">&copy; 2026 Avatar Universe. Made with love for Pandora fans.</p>
+            </div>
+        </footer>
+         <div class="modal-overlay" id="modal">
+            <div class="modal">
+                <button class="modal-close" id="modal-close">×</button>
+            <div class="modal-logo">
+                <img src="./images/avatar_logo.png" alt="Avatar Logo">
+            </div>
+            <h2 class="modal-title">Welcome to Pandora</h2>
+            <p class="modal-text">
+                Join the Na’vi and begin your journey through the world of Avatar.
+            </p>
+            <form class="modal-form">
+                <input type="text" placeholder="Your name" required>
+                <input type="email" placeholder="Email address" required>
+
+            <button type="submit" class="modal-submit">
+                Enter Pandora
+            </button>
+            </form>
+        </div> 
+        <div class="modal-overlay" id="game-modal" style="display: none;">
+            <div class="modal">
+                <button class="modal-close" id="game-modal-close">×</button>
+                <div id="game-content"></div>
+            </div>
+        </div>
+
+ </body>   
+ <script src="./js/main.js"></script>
+<script src="./js/ride.js"></script>
+</html>
