@@ -31,11 +31,12 @@ const renderCharacters = (data) => {
 
 const fetchCharacters = async () => {
     try {
-        const response = await fetch('../data/characters.json');
+        const response = await fetch('./data/characters.json'); 
+        if (!response.ok) throw new Error('Network response was not ok');
         allCharacters = await response.json();
         renderCharacters(allCharacters);
     } catch (error) {
-        console.error("Ошибка загрузки персонажей:", error);
+        console.error("Error:", error);
     }
 };
 
@@ -56,7 +57,7 @@ const charecterModalOpen = async (character) => {
     characterName.innerText = character.name;
 
     try {
-        const response = await fetch('../data/details.json');
+        const response = await fetch('./data/details.json');
         const detailData = await response.json();
         const info = detailData.characters_info.find(item => item.name === character.name);
 
