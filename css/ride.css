@@ -186,3 +186,91 @@
 .option:disabled {
     cursor: not-allowed;
 }
+
+@media (max-width: 1024px) {
+    .game-card {
+        width: 90%;
+        min-height: auto;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pandora-interactive-zone {
+        padding: 80px 0 50px;
+    }
+
+    .main-glow-title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+        padding: 0 15px;
+    }
+
+    .game-top-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .game-img-box {
+        max-width: 100%;
+        width: 240px;
+    }
+
+    .game-img-box img {
+        height: 300px;
+    }
+
+    .options {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .option {
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    .interval {
+        font-size: 2.2rem;
+    }
+
+    .btnn {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .startBtn {
+        width: 100% !important;
+        max-width: 266px;
+    }
+
+    .timer-buttons button {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .game-card {
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .main-glow-title {
+        font-size: 1.6rem;
+    }
+
+    .info-text h5 {
+        font-size: 0.8rem;
+    }
+
+    .interval {
+        font-size: 1.8rem;
+    }
+
+    .option {
+        font-size: 0.9rem;
+    }
+}

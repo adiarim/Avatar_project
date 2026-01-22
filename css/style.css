@@ -478,3 +478,113 @@ ul {
   width: 300px;
   height: 90px;
 }
+
+@media (max-width: 1340px) {
+    .container {
+        width: 95%; 
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 80px;
+    }
+
+    .logotype img {
+        height: 50px; 
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .main_text {
+        width: 90%;
+        margin: 150px auto 0; 
+        font-size: 32px; 
+        text-align: center;
+    }
+
+    .history_block {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .inner_history h2 {
+        font-size: 36px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about_item h3, 
+    .about_item p {
+        width: 100%; 
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .about_item img {
+        display: block;
+        margin: 0 auto 20px;
+    }
+
+    .slider_block {
+        height: auto;
+        padding: 50px 10px;
+    }
+
+    .slider_block h3.slider_title {
+        width: 100%;
+        font-size: 20px;
+        margin-top: 0;
+    }
+
+    .slider {
+        width: 95%;
+        height: 350px; 
+    }
+
+    .btn_slide {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    #prev { left: 5px; }
+    #next { right: 5px; }
+
+    .modal {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .modal-logo img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .main_text {
+        font-size: 24px;
+    }
+
+    .inner_history h2 {
+        font-size: 28px;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .video_text {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .colors-buttons {
+        display: none; 
+    }
+}

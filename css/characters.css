@@ -224,3 +224,102 @@
   color: var(--gray);
 }
 
+@media (max-width: 1024px) {
+    .characters-grid {
+        gap: 20px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .characters {
+        padding: 60px 0;
+    }
+
+    .characters-title {
+        font-size: 1.8rem;
+        gap: 15px;
+        letter-spacing: 2px;
+    }
+
+    .characters-title::before,
+    .characters-title::after {
+        width: 60px;
+        height: 20px;
+    }
+
+    .characters-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 15px;
+    }
+
+    .character-card {
+        padding: 10px;
+    }
+
+    .character-card img {
+        height: 240px;
+    }
+
+    .character-card h3 {
+        font-size: 1rem;
+    }
+
+    .character-container {
+        padding: 25px 20px;
+        width: 85%;
+    }
+
+    .char-name {
+        font-size: 1.6rem;
+    }
+
+    .char-clan, 
+    .char-weapon, 
+    .char-desc {
+        font-size: 16px;
+    }
+
+    .char-poster {
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .filter-wrapper {
+        width: 200px;
+    }
+
+    .main-filter-btn {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
+    .characters-title {
+        font-size: 1.4rem;
+        flex-direction: column;
+    }
+
+    .characters-title::before,
+    .characters-title::after {
+        display: none;
+    }
+
+    .characters-grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+
+    .character-card img {
+        height: 200px;
+    }
+
+    .char-name {
+        font-size: 1.4rem;
+    }
+
+    .closeChar {
+        top: 10px;
+        right: 15px;
+        font-size: 28px;
+    }
+}

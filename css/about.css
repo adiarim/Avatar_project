@@ -521,5 +521,101 @@
     transition: all 0.5s ease;
 }
 
+@media (max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+    .wildlife-card-style {
+        width: 90%;
+        min-height: auto;
+    }
+}
 
+@media (max-width: 992px) {
+    .content-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .main-glow-title {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 80px;
+    }
+    .logotype img {
+        height: 50px;
+    }
+    .menu {
+        display: none;
+    }
+    .pandora-hero {
+        height: auto;
+        padding: 100px 20px;
+    }
+    .main-glow-title {
+        font-size: 2.5rem;
+    }
+    .main-glow-title span {
+        font-size: 2rem;
+    }
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    .tribes-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tribe-card {
+        width: 100%;
+        max-width: 350px;
+    }
+    .wildlife-card-style {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .wildlife-card-style .card-img-box {
+        flex: 0 0 auto;
+        width: 100%;
+        height: 250px;
+    }
+    .wildlife-card-style .card-img-box img {
+        width: 100%;
+    }
+    .main-title {
+        font-size: 2rem;
+    }
+    .inner-converter {
+        width: 100%;
+        padding: 15px;
+    }
+    .about_weather_box .temp {
+        font-size: 2rem;
+    }
+    .scroll-indicator {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-glow-title {
+        font-size: 1.8rem;
+    }
+    .section-title {
+        font-size: 1.6rem;
+    }
+    .btn {
+        width: 45px;
+        height: 45px;
+    }
+    .slider-wrapper {
+        gap: 10px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
 
